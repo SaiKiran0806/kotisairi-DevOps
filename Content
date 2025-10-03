@@ -11,3 +11,12 @@ Creating Private Repository--> (Only the individual/specified people can access)
 ==>We can see what commit changes made by every individual in the repository on specific repository dashboard.
 ==>both public & private interfaces are same.
 
+second session(UI):
+Creating nested branches:
+==>Main branch has a single data file.
+==>with main branch as the source created a new branch(sub1), automatically auto-merge done with the files in the main branch copied to sub1 branch.
+==>now added some contents/files to the sub1 branch.
+==>Files in main branch-->1 & files in sub1 branch --> >1
+==>Creating new branch(sub2) with "main as source" & another new branch(sub3) with "sub1 as source". 
+==>Now the default branch for sub2 is "main" so files in sub2 --> only 1
+==>here default branch for sub3 is "sub1" so files in sub3 --> >1
