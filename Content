@@ -1,0 +1,13 @@
+first session(UI):
+
+Content to be added...
+Creating Public Repository--> (Individual/collaborators/anyone online can access/view/add/modify in the repository)
+Creating Private Repository--> (Only the individual/specified people can access)
+
+==>Creating a file with some content within the default branch(main) in the repository.
+==>Commit changes --> helpful for saving the data created. Title and Description should be in organised format, 
+   so that it will be helpful for others to view clearly and also who have made the commit changes.
+==>Uploading a existing file from local, choose the file, commit changes.
+==>We can see what commit changes made by every individual in the repository on specific repository dashboard.
+==>both public & private interfaces are same.
+
