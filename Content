@@ -29,3 +29,40 @@ Pull Request: Useful for merge the content/files in one existing branch to the o
 ==>Now that you have all files in the default branch, you can delete the contents or the SUB1 branch
 Restore Branch: 
 ==>If somehow you needed the deleted branch but later required now, then you can restore the deleted branch.
+
+third session(CLI):
+==>Accessing Git through terminal/Git bash/Mobaxterm
+==>Create a private repo so that it will be easy for understanding the SSH/GPG keys.
+==>After creating repository copy the SSH URL and move on dedicated terminal --># git clone "URL"
+==>If there are already SSH keys, get connected orelse you encounter error--> "Permission denied (publickey)" 
+
+New SSH keys generating:
+==>In terminal --> # ssh-keygen --> check path --> overwritten (if already existed) --> yes....
+==> # cd "paste the path"  --->if path has spaces between use "path/.ssh" ---> pwd (for re-checking) --> ls
+==>check the files with ".pub" ---> cat paste ".pub" -->copy the keys in the UI part (SSH & GPG keys ---> paste the key generated(create Title,authentication,key-->add key)-->password for confirmation)
+==>now that you have created ssh-keys--->again connect
+
+Creating file and pushing from CLI to remote(Git)
+==> # git clone "SSH-URL" (check the path-->Desktop)
+==>here the repository in UI is the directory in the CLI (repository name can been seen as directory)
+==>cd repository name -->automatically branch creates --->now push the files from CLI to remote repository(UI) ---> to do this there are stages(GIT stages) in between
+==>Git stages--> 1.Working directory-redcolor (--->push to--->) 2.Staging area-greencolor(-->push to--->) 3.local repository-nocolor(-->push to--->) 4.remote repositoty(GIT)
+==> # git status--> to check status of files
+==> # git add filename--> red color--?to move from working directory to staging area 
+==> # git commit -m "message you want to give" ---> green color --> to move from staging area to local repository
+    Encountered error ---> Author identity unknown ---> managed to clear the error (name & email)
+==> finally you should get--> "nothing to commit, working tree clean"
+==> # git push ---> to move from local repository to remote repository (check in remote repo)-->file accessed in UI which is created in CLI
+
+Deleting the repository in CLI: (same like the deletion of directory)
+==> # rm -rf directory_name --->(-rf means removing non-empty forcefully)
+
+HTTP connection:
+==>Copy URl --> # git clone "URL -->if no tokens then a pop up appears 1.Browser(username,pswd) 2.Token
+==>For generating token ---> setting-->Developer tokens-->Personal access tokens --> Tokens (classic) --> Generate new token(name, date....) --> Copy the Token safely as they are one-time view
+==>In the pop-up give the token --> you are connected to CLI
+
+
+
+
+
