@@ -25,4 +25,7 @@ Pull Request: Useful for merge the content/files in one existing branch to the o
 ==>Files in sub1 --> >1 & files in main--> only 1
 ==>Go to repo interface with option "Pull requests" -->create new pull request
 ==>select "base:main (destination branch to be copied/merged)"  &  select "compare: sub1 (source branch to be copied) ---> select pull request
-==>Wait until u get "NO CONFLICTS RAISED" --> select pull request ---> check the number of files in the main branch (modified to >1 files in the main branch also)
+==>Wait until u get "NO CONFLICTS RAISED WITH BASE BRANCH" --> select pull request ---> check the number of files in the main branch (modified to >1 files in the main branch also)
+==>Now that you have all files in the default branch, you can delete the contents or the SUB1 branch
+Restore Branch: 
+==>If somehow you needed the deleted branch but later required now, then you can restore the deleted branch.
