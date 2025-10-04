@@ -96,32 +96,27 @@ pick up specific commit and merge to existing branch(in CLI)
 ==> copy the commit id(atleast 8 letters)
 ==> # git cherry-pick "paste commit id"    --> to merge specific commit in existing branch to other existing branch
 
-Commit importance & how to secure if it is still not to commit stage:
+Commit importance & how to secure if it is still not to commit stage(in CLI):
 ==> if we create a file in CLI it shows in all branches in working repo, staging area also until unless it is commit in specific branch
 ==> One who commit is the one who is creator of file so commit is necessary.
 ==> # git stash save filename     ---> to secure file if not commit (i.e in working or staging area)
 
-list out secure files if not commit:
+list out secure files if not commit(in CLI):
 ==> # git stash list            ---> to view secured file and also lists us in which branch it is
 
-to bring back secured file to working or staging area:
+to bring back secured file to working or staging area(in CLI):
 ==> # git stash apply filename (or) # git stash apply stash_id       ---> for temporarily show the file 
 ==> # git stash pop stash_id                                         ---> for permanently show the file again in working or staging area
 
+Restore modified data to original in file(in CLI):
+==> # git checkout -- filename          --> restore to original data if it is in -->working repo
+==> # git reset HEAD filename           --> restore back from staging area to working area  ---> from working area to original ( # git checkout -- filename)
+==> # git reset head~ "filename"        --> restore back from local repo(commit) to working area because staging area is temporary ---> from working area to original ( # git checkout -- filename)
+==> # git reset head~ 
+==> # git checkout -- filename
+==> # git push -f                        --> all above 3 steps for forcefully restoring back the modified data to original data in UI
 
-
-
-
-
-
-
-
-
-
-
-==>
-
-
-
-
+Modified data(UI) to be applied in CLI:
+==> # git pull                             --> if modified data applied to all branches
+==> # git fetch                            --> if modified data only to specific branch
 
