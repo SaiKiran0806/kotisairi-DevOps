@@ -1,0 +1,36 @@
+Maven:
+Maven is a build tool. Code of maven is written in Java.
+It is an open source & provides uniform build system.
+It is more flexible, makes build process easy
+
+Build Tool:
+THese are essential for JAVA applications.
+They decide whether the application is JAVA application or not.
+By build tools we can automate the java applications.
+Build tools generate the source code & also compile the source code(resolve the dependencies in the java applications)
+It has 3 types of artifacts (artifacts useful for deployment of application. They compress & zip the entire source code into a package)
+==> .war (web archive) --> only for F.E applications (web applications)
+==> .jar (java archive)--> only for B.E applications (templates, blogs, advertisements)
+==> .ear (enterprise archive--> application subscription
+
+POM file:
+==>Project Object Model file, is xml file named as "pom.xml" 
+==>By this pom.xml file, we can build the java application because it finds all the configurations of the application (libraries, dependencies etc)
+
+Stages in Maven:
+In maven the stages are in uniform order, means the stages are performed in order wise even we exectute code of any stage.
+If any errors raised in between, it stops at that particular stage itself.
+==>Validate --> checks the syntax
+            --> by this we can the snapchat version, which artifact created
+            --> we have to move to exact path and execute the code ( # mvn validate)
+==>Compile  --> useful to resolve application related dependencies ( # mvn compile)
+==>Test     --> useful for testing with Uniform frame work (whenever a developer sends an application for testing, it should meet some conditions & 
+                these conditions should also be applicable even after deployment of the application, so it checks while testing....# mvn test)
+==>Package  --> Here the application is separated into the 3 artifacts ( # mvn package)
+==>clean    --> To clean/delete if an unnecessary data or unwanted content is created ( # mvn clean)
+==>Install  --> Whatever artifact we have gets installed in home location ( # mvn install)
+==>Deploy   --> Omit
+==>All steps are performed steps wise & these steps are pre-determined in maven
+
+
+
