@@ -1,6 +1,5 @@
 first session(UI):
 
-Content to be added...
 Creating Public Repository--> (Individual/collaborators/anyone online can access/view/add/modify in the repository)
 Creating Private Repository--> (Only the individual/specified people can access)
 
@@ -121,6 +120,7 @@ Modified data(UI) to be applied in CLI:
 ==> # git pull                             --> if modified data applied to all branches
 ==> # git fetch                            --> if modified data only to specific branch
 
+fourth session:
 Modifiy commits(in CLI):
 ==> # git commit --amend -m "commit message"       --> change commit for recent log
 ==> # git rebase -i HEAD~"no.of commits"           --> change specific commit (will go insert mode, select one command, save, commit the message, save)                    
