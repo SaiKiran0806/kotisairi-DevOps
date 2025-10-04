@@ -62,6 +62,65 @@ HTTP connection:
 ==>For generating token ---> setting-->Developer tokens-->Personal access tokens --> Tokens (classic) --> Generate new token(name, date....) --> Copy the Token safely as they are one-time view
 ==>In the pop-up give the token --> you are connected to CLI
 
+Creating Branch:
+==> # git branch branchname      --> to create branch
+==> # git branch                 --> to check in which branch we are
+==> # git checkout branchname    --> to switch to other brnaches
+==> auto-merge is done automatically while branch is created i.e all the files in source branch will be copied to this destination branch (newly created)
+==> # git checkout -b branchname  -> to create a new branch and switch to it automatically
+Delete Branch:
+==> # git branch --delete branchname  (or) # git branch -d brname   --> only deletes if we are outside the branch or else doesn't delete
+Restore Branch:
+==> At the time of deletion of branch a 'code' is generated to branch so copy that.
+==> # git branch 'deleted_br_name' 'code'  --> to restore the branch
+
+Push branches to remote repo:
+==> Branches we created only shows in CLI but not in GIT so for that
+==> # git push origin branchname  --> origin is keyword
+==> # git remote                  --> to check which keywords are there
+==> # git remote add newkeyword URL_link  --> to create new keywords
+
+Delete Branch in UI from CLI:
+==> git push origin --delete brname   --> to delete branch in UI from CLI (but this only deletes in UI but not in CLI)
+
+Copy files between two existing branches(within CLI):
+==> Create some files and commit in the brance
+==> # git add .   ---> to add all the files at once from staging area to local repo
+==> switch to the breanch to which merge should be done(for exa: main)
+==> # git merge source_br  --> files in source branch merges to destination branch(main) 
+
+to list out the commits(In CLI):
+==> # git log                  --> lists out the commits (q for quit)
+
+pick up specific commit and merge to existing branch(in CLI)
+==> copy the commit id(atleast 8 letters)
+==> # git cherry-pick "paste commit id"    --> to merge specific commit in existing branch to other existing branch
+
+Commit importance & how to secure if it is still not to commit stage:
+==> if we create a file in CLI it shows in all branches in working repo, staging area also until unless it is commit in specific branch
+==> One who commit is the one who is creator of file so commit is necessary.
+==> # git stash save filename     ---> to secure file if not commit (i.e in working or staging area)
+
+list out secure files if not commit:
+==> # git stash list            ---> to view secured file and also lists us in which branch it is
+
+to bring back secured file to working or staging area:
+==> # git stash apply filename (or) # git stash apply stash_id       ---> for temporarily show the file 
+==> # git stash pop stash_id                                         ---> for permanently show the file again in working or staging area
+
+
+
+
+
+
+
+
+
+
+
+
+==>
+
 
 
 
