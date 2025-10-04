@@ -91,6 +91,7 @@ Copy files between two existing branches(within CLI):
 
 to list out the commits(In CLI):
 ==> # git log                  --> lists out the commits (q for quit)
+==> # git log --oneline        --> lists out commits line by line
 
 pick up specific commit and merge to existing branch(in CLI)
 ==> copy the commit id(atleast 8 letters)
@@ -120,3 +121,9 @@ Modified data(UI) to be applied in CLI:
 ==> # git pull                             --> if modified data applied to all branches
 ==> # git fetch                            --> if modified data only to specific branch
 
+Modifiy commits(in CLI):
+==> # git commit --amend -m "commit message"       --> change commit for recent log
+==> # git rebase -i HEAD~"no.of commits"           --> change specific commit (will go insert mode, select one command, save, commit the message, save)                    
+
+errors not raised but check the errors--->
+==> Conflicts not raised while doing work but check the various conflicts.
